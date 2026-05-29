@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Моя любовь</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>❤️</text></svg>">
+
     <link rel="stylesheet" href="static/styles/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+    </style>
 </head>
+
 <body>
 
     <div>
@@ -20,18 +27,18 @@
     <p id="message"></p>
 
     <script>
-        
+
         let btnYes = document.getElementById("btnYes");
         let btnNo = document.getElementById("btnNo")
         let messageEvent = document.getElementById("message")
-        
-        btnYes.addEventListener("click" , function(){
+
+        btnYes.addEventListener("click", function () {
 
             let card = document.querySelector("div");
             let cardWidth = card.clientWidth;
             let cardHeigth = card.clientHeight;
 
-            let randomX = Math.floor(Math.random() * (cardWidth - 100)) +10;
+            let randomX = Math.floor(Math.random() * (cardWidth - 100)) + 10;
             let randimY = Math.floor(Math.random() * (cardHeigth - 50)) + 10;
 
             btnYes.style.position = "absolute";
@@ -39,12 +46,15 @@
             btnYes.style.top = randimY + "px"
         });
 
-            btnNo.addEventListener("click", function(){
-                messageEvent.textContent = "Ну как хочешь! ❤️ Ты моя сладкая булочка! 🍩";
-            })
+        btnNo.addEventListener("click", function () {
+            messageEvent.textContent = "Ну как хочешь! ❤️ Ты моя сладкая булочка! 🍩";
+        })
 
     </script>
 
-    
+
 </body>
+
 </html>
+
+

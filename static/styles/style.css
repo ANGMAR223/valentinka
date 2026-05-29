@@ -1,3 +1,5 @@
+
+
 body {
     background-color: #ffe6ea;
 }
@@ -5,11 +7,37 @@ div {
     background-color: white;
     padding: 40px;
     border-radius: 20px;
+     font-family: 'Nunito', 'Segoe UI', Tahoma, sans-serif;
     max-width: 300px;
     margin: 200px auto;
     text-align: center;
     box-shadow: 0 4px 20px rgba(255, 0, 0, 0.3);
     position: relative;
+    animation: fadeIn 0.6s ease;
+}
+
+ @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+h1 {
+            font-size: 26px;
+            color: #e91e63;
+            margin-top: 0;
+            margin-bottom: 10px;
+}
+
+p {
+            font-size: 17px;
+            color: #555;
+            margin-bottom: 25px;
 }
 
 button {
@@ -19,7 +47,12 @@ button {
     border-radius: 10px;
     margin: 10px;
     cursor: pointer;
+    
 }
+
+ button:active {
+            transform: scale(0.95);
+        }
 
 .btn-yes {
     background-color: #4CAF50;
@@ -42,4 +75,5 @@ button {
     font-weight: bold;
     margin-top: 30px;
     color: #e91e63;
+    animation: fadeIn 0.4s ease;
 }
